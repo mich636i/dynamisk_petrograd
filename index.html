@@ -47,14 +47,21 @@
         </div>
         <div class="row">
             <!--Forret 1-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-dm-4">
-                <img src="image/imgs/medium/bochkarev-md.jpg" class="fotokasse img-responsive text-center">
-                <h3>Rettens navn:</h3>
-                <h4>Pris:</h4>
-                <button type="button" class="btn btn-primary modalknap btn-lg" data-toggle="modal" data-target="#myModal">
-                    Læs mere
-                </button>
-            </div>
+            <template id="produkt_template">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-dm-4">
+                    <img src="image/imgs/medium/bochkarev-md.jpg" class="fotokasse img-responsive data_billede">
+                    <h3 class="data_navn">DATA_NAVN</h3>
+                    <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
+                    <!--Sæt udsolgt class ved udsolgt og rabat class ved rabat-->
+                    <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                    <!--Skal kun vises hvis der er rabat-->
+                    <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                    <!--Skal kun vises hvis retten er udsolgt-->
+                    <button type="button" class="btn btn-primary modalknap btn-lg" data-toggle="modal" data-target="#myModal">
+                        Læs mere
+                    </button>
+                </div>
+            </template>
 
 
             <!--Forret 2-->
