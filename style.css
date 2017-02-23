@@ -85,3 +85,7 @@ h2 {
         padding-left: 40px;
     }
 }
+
+.udsolgt {
+    text-decoration: line-through;
+}
