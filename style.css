@@ -86,6 +86,7 @@ h2 {
     }
 }
 
-.udsolgt {
+.udsolgt,
+.rabat {
     text-decoration: line-through;
 }
